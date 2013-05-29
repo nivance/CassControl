@@ -33,7 +33,7 @@ script/node.properties配置Cassandra集群服务器信息，每行数据为“host port user pa
 
 ###6、执行说明
 执行ctrl-cass.sh脚本要带1个参数，可以为start-all或者stop-all。
-<code>		./ctrl-cass.sh start-all
-		./ctrl-cass.sh stop-all</code>
+<p><code>	./ctrl-cass.sh start-all     
+	./ctrl-cass.sh stop-all</code></pre>
 
 
