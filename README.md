@@ -10,11 +10,11 @@ Getting Started
 
 1、配置CASS_HOME
 如:
-	JAVA_HOME=/home/jdk1.6.0_30
+```	JAVA_HOME=/home/jdk1.6.0_30
 	JRE_HOME=/home/jdk1.6.0_30/jre
 	CASS_HOME=/home/cass/apache-cassandra-1.2.0
 	PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$CASS_HOME/bin
-	
+
 	PATH=$PATH:$HOME/bin
 
 	export JAVA_HOME JRE_HOME CASS_HOME PATH CLASSPATH
@@ -22,7 +22,7 @@ Getting Started
 2、stop-server
 将$CASS_HOME/bin/stop-server文件最后两行的注释去掉，可以直接执行这个脚本停止Cassandra.
 如:
-	user=`whoami`
+```	user=`whoami`
 	pgrep -u $user -f cassandra | xargs kill -9
 
 3、CassControl.jar(jar不能上传到github)
@@ -38,7 +38,7 @@ script/node.properties配置Cassandra集群服务器信息，每行数据为“host port user pa
 6、执行说明
 执行ctrl-cass.sh脚本要带1个参数，可以为start-all或者stop-all。
 如:
-	./ctrl-cass.sh start-all
-	./ctrl-cass.sh stop-all
+```	./ctrl-cass.sh start-all
+```	./ctrl-cass.sh stop-all
 
 
