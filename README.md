@@ -26,13 +26,13 @@ Getting Started
 
 ###4、脚本说明
 script/ctrl-cass.sh启动和停止服务器的脚本(可在此修改CassControl.jar包路径)。
-script/node.properties配置Cassandra集群服务器信息，每行数据为“host port user password”，空格分隔()。
+script/node.properties配置Cassandra集群服务器信息，每行数据为“host port user password”，空格分隔。
 
 ###5、上传脚本到服务器
 将script/ctrl-cass.sh、script/node.properties和CassControl.jar和上传$CASS_HOME/bin下。
 
 ###6、执行说明
-执行ctrl-cass.sh脚本要带1个参数，可以为start-all或者stop-all。如:
+执行ctrl-cass.sh脚本要带1个参数，可以为start-all或者stop-all。
 		./ctrl-cass.sh start-all
 		./ctrl-cass.sh stop-all
 
