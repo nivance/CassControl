@@ -26,10 +26,10 @@ execute(){
 
 case "$1" in
 	'start-all')
-		execute 'cassandra'
+		execute 'cassandra;exit;'
 		;;
 	'stop-all')
-		execute 'stop-server'
+		execute 'stop-server;exit;'
 		;;
 	*)	
 
